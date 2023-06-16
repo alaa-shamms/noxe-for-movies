@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/noxe-for-movies/static/css/main.00b42541.css",
-    "main.js": "/noxe-for-movies/static/js/main.61f20601.js",
+    "main.js": "/noxe-for-movies/static/js/main.f8cada65.js",
     "static/media/title-image-1.webp": "/noxe-for-movies/static/media/title-image-1.eb5e2899315f131fed94.eb5e2899315f131fed94.webp",
     "static/media/fa-solid-900.ttf": "/noxe-for-movies/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/cinema-strip-64074_1280.webp": "/noxe-for-movies/static/media/cinema-strip-64074_1280.7b90f59e51dba05e1739.webp",
@@ -21,10 +21,10 @@
     "index.html": "/noxe-for-movies/index.html",
     "static/media/logo-dark.webp": "/noxe-for-movies/static/media/logo-dark.5aab8137fe2130969ca6.webp",
     "main.00b42541.css.map": "/noxe-for-movies/static/css/main.00b42541.css.map",
-    "main.61f20601.js.map": "/noxe-for-movies/static/js/main.61f20601.js.map"
+    "main.f8cada65.js.map": "/noxe-for-movies/static/js/main.f8cada65.js.map"
   },
   "entrypoints": [
     "static/css/main.00b42541.css",
-    "static/js/main.61f20601.js"
+    "static/js/main.f8cada65.js"
   ]
 }
