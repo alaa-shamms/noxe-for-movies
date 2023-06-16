@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Montserrat Alternates', sans-serif;
+    --rating-color:#ffc908;
+}
+body
+{
+    background-color: #131722 !important;
+    font-family: var(--font-family) !important;
+    color: var(--light-color) !important;
+}
+.nav_bg
+{
+    background-color: #131722 !important;
+
+}
+/* 
+$bgColor:#131722;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6) ;
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0; */
+
+.borderShape
+{
+    border: 1px solid #a8a8a83d ;
+}
+.lightColor
+{
+    color: #24baef !important;
+}
+.lightBgColor
+{
+    background-color:#24baef !important ;
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.starSize
+{
+    font-size: 12.5px;
+    color: gold;
+    margin-left: 2px;
+
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .detail_view
+  {
+    color: gray;
+  }
+
+
+  
+/* pagination */
+
+
+
+
+#innerBox i{
+  cursor: pointer;
+}
+.logoNav
+{
+  margin-top: -5px;
+}
+.cursor_pointer
+{
+  cursor: pointer;
+}
+
+.press
+{
+  color: #24baef !important;
+
+}
+.filmSize
+{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important
+}
+.bg_owl
+{
+  background-image: url("../src/title-image-1.eb5e2899315f131fed94.webp");
+  background-size: cover;
+  background-position: center center;
+}
+.err_container
+{
+  height: 93.2vh;
+}
+.err_page
+{
+  width: 450px;
+  height: 450px;
+  background-image: url("../src/404-error-lost-space-concept-illustration_114360-7871.avif");
+  background-size: cover;
+  background-position: center center;
 }
