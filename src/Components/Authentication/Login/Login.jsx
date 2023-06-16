@@ -5,8 +5,9 @@ import * as Yup from "yup"
 import { Link, useNavigate } from 'react-router-dom'
 import {Helmet} from "react-helmet";
 import ParticlesPlugin from '../../Particles/ParticlesPlugin'
+import { toast } from 'react-hot-toast'
 
-export default function Login({saveUserData}) {
+export default function Login({saveUserData,userData}) {
 let navigateTo=useNavigate()
 let [ErrMsg,setErrMsg]=useState("")    
 let [Loading,setLoading]=useState(false)   
@@ -41,6 +42,12 @@ async function handleLogin(values)
         localStorage.setItem("UserMovieToken",data.token)
         setLoading(false)
         saveUserData()
+        toast.success(`welcome ${userData.name} in noxe`,
+        {
+        duration: 5000 ,
+        position: 'top-center',
+        className: ' bg-secondary  text-center text-white px-2'
+        })
         navigateTo('/')
     }
     console.log(data)
